@@ -1,4 +1,4 @@
-# FastAPI Wine Classifier Lab
+# FastAPI Lab 1
 
 This project demonstrates a simple MLOps workflow using FastAPI for serving a machine learning model to classify wine data. The repository includes code for data loading, model training, prediction, and serving predictions via a REST API.
 
@@ -35,12 +35,14 @@ pip install -r requirements.txt
 ### 2. Train the Model
 Run the training script to generate `model/wine_model.pkl`:
 ```bash
-python src/train.py
+cd src
+python train.py
 ```
 
 ### 3. Start the FastAPI Server
 ```bash
-uvicorn src.main:app --reload
+cd src
+uvicorn main:app --reload
 ```
 The API will be available at `http://127.0.0.1:8000/`.
 
@@ -76,7 +78,7 @@ Returns:
 ![Terminal Results](assets/results.png)
 
 ## Notes
-- The `iris_model.pkl` is present but not used in this project.
+- The `iris_model.pkl` is present but not used in this lab.
 - All code is in the `src/` directory.
 - The model is retrained each time you run `train.py`.
 
