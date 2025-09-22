@@ -73,7 +73,7 @@ Returns:
 ```
 
 ### 5. Results
-![Alt text]("assets/results.png")
+![Terminal Results](assets/results.png)
 
 ## Notes
 - The `iris_model.pkl` is present but not used in this project.
