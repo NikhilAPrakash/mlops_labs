@@ -20,7 +20,7 @@ This repository contains hands-on labs and projects for learning and practicing 
   - Logs and configuration for Airflow tasks.
 
 ### FastAPI Lab 1
-- Lab 2 of IE7374 MLOPs Lab
+- Lab 1 of IE7374 MLOPs Lab
 - Building REST API for ML models using FastAPI.
 - Key components:
   - Endpoints for training and prediction.
