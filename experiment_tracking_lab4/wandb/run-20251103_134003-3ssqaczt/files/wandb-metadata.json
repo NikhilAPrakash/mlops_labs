@@ -1,0 +1,40 @@
+{
+  "os": "Windows-10-10.0.26100-SP0",
+  "python": "CPython 3.9.13",
+  "startedAt": "2025-11-03T18:40:03.603315Z",
+  "program": "c:\\Users\\Nikhil\\Documents\\GitHub\\mlops_labs\\experiment_tracking_lab4\\experiment_tracking_lab4.ipynb",
+  "codePath": "c:\\Users\\Nikhil\\Documents\\GitHub\\mlops_labs\\experiment_tracking_lab4\\experiment_tracking_lab4.ipynb",
+  "codePathLocal": "experiment_tracking_lab4.ipynb",
+  "git": {
+    "remote": "https://github.com/NikhilAPrakash/mlops_labs.git",
+    "commit": "213548144c995a1295a2f2fe8e5548e480328a2a"
+  },
+  "email": "nikhilanil2609@gmail.com",
+  "root": "c:\\Users\\Nikhil\\Documents\\GitHub\\mlops_labs\\experiment_tracking_lab4",
+  "host": "DESKTOP-TNK46LP",
+  "executable": "c:\\Users\\Nikhil\\Documents\\GitHub\\mlops_labs\\experiment_tracking_lab4\\.venv\\Scripts\\python.exe",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "511152484352",
+      "used": "204412575744"
+    }
+  },
+  "memory": {
+    "total": "14702026752"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+      "memoryTotal": "6442450944",
+      "cudaCores": 2560,
+      "architecture": "Ampere",
+      "uuid": "GPU-3edb6f35-a95c-f5bd-6259-b2c15a66409e"
+    }
+  ],
+  "cudaVersion": "12.5",
+  "writerId": "tpr8ez7ayca5qqadd207cfihgzo8xchc"
+}

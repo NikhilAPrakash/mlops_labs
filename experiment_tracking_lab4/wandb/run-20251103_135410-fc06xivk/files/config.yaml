@@ -1,0 +1,111 @@
+_wandb:
+    value:
+        cli_version: 0.22.3
+        e:
+            g1bjb89k4ze99k96r69dovvwepag6e3m:
+                codePath: c:\Users\Nikhil\Documents\GitHub\mlops_labs\experiment_tracking_lab4\experiment_tracking_lab4.ipynb
+                codePathLocal: experiment_tracking_lab4.ipynb
+                cpu_count: 8
+                cpu_count_logical: 16
+                cudaVersion: "12.5"
+                disk:
+                    /:
+                        total: "511152484352"
+                        used: "204446855168"
+                email: nikhilanil2609@gmail.com
+                executable: c:\Users\Nikhil\Documents\GitHub\mlops_labs\experiment_tracking_lab4\.venv\Scripts\python.exe
+                git:
+                    commit: 213548144c995a1295a2f2fe8e5548e480328a2a
+                    remote: https://github.com/NikhilAPrakash/mlops_labs.git
+                gpu: NVIDIA GeForce RTX 3050 6GB Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 2560
+                      memoryTotal: "6442450944"
+                      name: NVIDIA GeForce RTX 3050 6GB Laptop GPU
+                      uuid: GPU-3edb6f35-a95c-f5bd-6259-b2c15a66409e
+                host: DESKTOP-TNK46LP
+                memory:
+                    total: "14702026752"
+                os: Windows-10-10.0.26100-SP0
+                program: c:\Users\Nikhil\Documents\GitHub\mlops_labs\experiment_tracking_lab4\experiment_tracking_lab4.ipynb
+                python: CPython 3.9.13
+                root: c:\Users\Nikhil\Documents\GitHub\mlops_labs\experiment_tracking_lab4
+                startedAt: "2025-11-03T18:54:10.320714Z"
+                writerId: g1bjb89k4ze99k96r69dovvwepag6e3m
+        m: []
+        python_version: 3.9.13
+        t:
+            "1":
+                - 1
+                - 2
+                - 3
+                - 5
+                - 53
+            "2":
+                - 1
+                - 2
+                - 3
+                - 5
+                - 53
+            "3":
+                - 1
+                - 2
+                - 13
+                - 16
+                - 62
+            "4": 3.9.13
+            "5": 0.22.3
+            "8":
+                - 1
+                - 3
+            "12": 0.22.3
+            "13": windows-amd64
+        visualize:
+            confusion_matrix:
+                panel_config:
+                    fieldSettings:
+                        Actual: Actual
+                        Predicted: Predicted
+                        nPredictions: nPredictions
+                    panelDefId: wandb/confusion_matrix/v1
+                    stringSettings:
+                        title: Confusion Matrix Curve
+                    transform:
+                        name: tableWithLeafColNames
+                    userQuery:
+                        queryFields:
+                            - args:
+                                - name: runSets
+                                  value: ${runSets}
+                              fields:
+                                - fields: []
+                                  name: id
+                                - fields: []
+                                  name: name
+                                - fields: []
+                                  name: _defaultColorIndex
+                                - args:
+                                    - name: tableKey
+                                      value: confusion_matrix_table
+                                  fields: []
+                                  name: summaryTable
+                              name: runSets
+                panel_type: Vega2
+architecture:
+    value: LSTM
+batch_size:
+    value: 32
+embedding_dim:
+    value: 100
+epochs:
+    value: 15
+hidden_size:
+    value: 128
+learning_rate:
+    value: 0.003
+num_layers:
+    value: 2
+vocab_size:
+    value: 5000

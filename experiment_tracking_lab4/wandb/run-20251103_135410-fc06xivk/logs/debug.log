@@ -1,0 +1,35 @@
+2025-11-03 13:54:10,324 INFO    MainThread:17552 [wandb_setup.py:_flush():81] Current SDK version is 0.22.3
+2025-11-03 13:54:10,324 INFO    MainThread:17552 [wandb_setup.py:_flush():81] Configure stats pid to 17552
+2025-11-03 13:54:10,324 INFO    MainThread:17552 [wandb_setup.py:_flush():81] Loading settings from C:\Users\Nikhil\.config\wandb\settings
+2025-11-03 13:54:10,324 INFO    MainThread:17552 [wandb_setup.py:_flush():81] Loading settings from c:\Users\Nikhil\Documents\GitHub\mlops_labs\experiment_tracking_lab4\wandb\settings
+2025-11-03 13:54:10,324 INFO    MainThread:17552 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-11-03 13:54:10,324 INFO    MainThread:17552 [wandb_init.py:setup_run_log_directory():706] Logging user logs to c:\Users\Nikhil\Documents\GitHub\mlops_labs\experiment_tracking_lab4\wandb\run-20251103_135410-fc06xivk\logs\debug.log
+2025-11-03 13:54:10,324 INFO    MainThread:17552 [wandb_init.py:setup_run_log_directory():707] Logging internal logs to c:\Users\Nikhil\Documents\GitHub\mlops_labs\experiment_tracking_lab4\wandb\run-20251103_135410-fc06xivk\logs\debug-internal.log
+2025-11-03 13:54:10,324 INFO    MainThread:17552 [wandb_init.py:monkeypatch_ipython():625] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000018263C94C70>
+2025-11-03 13:54:10,324 INFO    MainThread:17552 [wandb_init.py:init():833] calling init triggers
+2025-11-03 13:54:10,324 INFO    MainThread:17552 [wandb_init.py:init():838] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.003, 'epochs': 15, 'batch_size': 32, 'hidden_size': 128, 'num_layers': 2, 'embedding_dim': 100, 'vocab_size': 5000, 'architecture': 'LSTM', '_wandb': {}}
+2025-11-03 13:54:10,324 INFO    MainThread:17552 [wandb_init.py:init():881] starting backend
+2025-11-03 13:54:12,568 INFO    MainThread:17552 [wandb_init.py:init():884] sending inform_init request
+2025-11-03 13:54:12,586 INFO    MainThread:17552 [wandb_init.py:init():892] backend started and connected
+2025-11-03 13:54:12,588 INFO    MainThread:17552 [wandb_run.py:_label_probe_notebook():1328] probe notebook
+2025-11-03 13:54:12,590 INFO    MainThread:17552 [wandb_run.py:_label_probe_notebook():1338] Unable to probe notebook: 'charmap' codec can't decode byte 0x81 in position 34536: character maps to <undefined>
+2025-11-03 13:54:12,590 INFO    MainThread:17552 [wandb_init.py:init():962] updated telemetry
+2025-11-03 13:54:12,648 INFO    MainThread:17552 [wandb_init.py:init():986] communicating run to backend with 90.0 second timeout
+2025-11-03 13:54:13,636 INFO    MainThread:17552 [wandb_init.py:init():1033] starting run threads in backend
+2025-11-03 13:54:13,786 INFO    MainThread:17552 [wandb_run.py:_console_start():2506] atexit reg
+2025-11-03 13:54:13,786 INFO    MainThread:17552 [wandb_run.py:_redirect():2354] redirect: wrap_raw
+2025-11-03 13:54:13,786 INFO    MainThread:17552 [wandb_run.py:_redirect():2423] Wrapping output streams.
+2025-11-03 13:54:13,786 INFO    MainThread:17552 [wandb_run.py:_redirect():2446] Redirects installed.
+2025-11-03 13:54:13,792 INFO    MainThread:17552 [wandb_init.py:init():1073] run started, returning control to user process
+2025-11-03 13:54:15,452 INFO    MainThread:17552 [wandb_watch.py:_watch():68] Watching
+2025-11-03 13:54:53,572 INFO    MainThread:17552 [wandb_run.py:_config_callback():1390] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2025-11-03 13:55:44,910 INFO    MainThread:17552 [wandb_run.py:_config_callback():1390] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2025-11-03 13:56:51,038 INFO    MainThread:17552 [wandb_run.py:_config_callback():1390] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2025-11-03 13:56:55,515 INFO    MainThread:17552 [wandb_run.py:_finish():2272] finishing run nikhilanil2609-northeastern-university/sentiment-analysis-nlp/fc06xivk
+2025-11-03 13:56:55,522 INFO    MainThread:17552 [jupyter.py:save_ipynb():353] not saving jupyter notebook
+2025-11-03 13:56:55,522 INFO    MainThread:17552 [wandb_init.py:_jupyter_teardown():610] cleaning up jupyter logic
+2025-11-03 13:56:55,522 INFO    MainThread:17552 [wandb_run.py:_atexit_cleanup():2471] got exitcode: 0
+2025-11-03 13:56:55,522 INFO    MainThread:17552 [wandb_run.py:_restore():2453] restore
+2025-11-03 13:56:55,522 INFO    MainThread:17552 [wandb_run.py:_restore():2459] restore done
+2025-11-03 13:57:04,026 INFO    MainThread:17552 [wandb_run.py:_footer_sync_info():3835] logging synced files
