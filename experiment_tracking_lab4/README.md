@@ -38,7 +38,7 @@ Note: Only TensorFlow/Keras versions are explicitly referenced in the notebook c
 - The best model is saved locally as `best_sentiment_model.pth`.
 - The run logs, metrics, and a model artifact are uploaded to your Weights & Biases project (the notebook calls `wandb.init()` and `run.log_artifact()`).
 
-## Activate the included .venv (Windows) (Since this is being run on the virtual environment)
+## Activate the included .venv (Windows) (Since this is being run on a virtual environment)
 
 Command Prompt (cmd.exe):
 
