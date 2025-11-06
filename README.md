@@ -11,6 +11,26 @@ This repository contains hands-on labs and projects for learning and practicing 
 
 ## Labs Overview
 
+### Experiment Tracking - Weights and Biases Lab 4
+- Lab 4 of IE7374 MLOPs Lab
+- Key Components
+  - Sentiment Analysis
+  - Defines a Pytorch LSTM model
+  - logs confusion matrix to WanDB
+  - storing best validation model to wandb artifact
+  
+### Github Actions and GCP Lab 3
+- Lab 3 of IE7374 MLOPs Lab
+- Please refer the below link:
+```bash
+https://github.com/NikhilAPrakash/ghactions-gcp-beginner-lab.git
+```
+- Using GCP and github actions to automate workflows
+- Key components:
+  - Setting up a GCP project and service account
+  - Github Actions access setup with GCP
+  - Using GCS to store trained models
+
 ### Airflow Lab 2
 - Lab 2 of IE7374 MLOPs Lab
 - Using Apache Airflow for automating ML pipelines.
