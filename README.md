@@ -3,7 +3,8 @@
 This repository contains hands-on labs and projects for learning and practicing MLOps concepts, including workflow orchestration, model training, deployment, and automation using tools like Apache Airflow and FastAPI.
 
 ## Repository Structure
-
+- `tensorboard_lab5/`
+- `experiment_tracking_lab4/`
 - `airflow_lab2/`  
   Orchestrate machine learning workflows using Apache Airflow. Includes DAGs for data preprocessing, model training, and more.
 - `fastapi_lab1/`  
