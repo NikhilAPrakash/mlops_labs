@@ -12,9 +12,11 @@ This repository contains hands-on labs and projects for learning and practicing 
 ## Labs Overview
 
 
-### Lab 5
+### Tensorboard Logging Lab 5
 - Lab 5 of IE7374 MLOPs Lab
--
+- Combination of the four labs available in MLOPs Repo 
+
+
 ### Experiment Tracking - Weights and Biases Lab 4
 - Lab 4 of IE7374 MLOPs Lab
 - Key Components
