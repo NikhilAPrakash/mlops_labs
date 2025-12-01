@@ -88,6 +88,12 @@ curl -X POST http://localhost:4000/predict \
 
 Or open `http://localhost:4000/predict` in a browser and use the form to submit the same data.
 
+## Results
+
+![image 1](assets/image1.png)
+![image 2](assets/image.png)
+
+
 ## Files of interest
 
 - `src/model_training.py` — key place to change model, dataset, or training parameters
