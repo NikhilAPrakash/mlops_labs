@@ -3,6 +3,7 @@
 This repository contains hands-on labs and projects for learning and practicing MLOps concepts, including workflow orchestration, model training, deployment, and automation using tools like Apache Airflow and FastAPI.
 
 ## Repository Structure
+- `docker_lab6/`
 - `tensorboard_lab5/`
 - `experiment_tracking_lab4/`
 - `airflow_lab2/`  
@@ -12,6 +13,10 @@ This repository contains hands-on labs and projects for learning and practicing 
 
 ## Labs Overview
 
+### Docker Lab 6
+- Lab 6 of IE7374 MLOPs Lab
+- Deploying a sample machine learning classification model using flask API and Docker 
+- Part of the MLOPs Lab - Docker Lab 2
 
 ### Tensorboard Logging Lab 5
 - Lab 5 of IE7374 MLOPs Lab

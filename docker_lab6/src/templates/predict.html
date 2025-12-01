@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wine Classifier</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #5c67f2;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 600px;
+        }
+        label {
+            margin-top: 10px;
+            display: block;
+            color: #555;
+        }
+        input[type="number"] {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            width: calc(100% - 22px);
+            display: block;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .predicted-class {
+            color: #31708e;
+            background-color: #d9edf7;
+            border-color: #bce8f1;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 20px;
+            max-width: 600px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Welcome to the Wine Classifier API - MLOps Class of 2025!</h1>
+    <p>Enter the 13 feature values of a wine sample to predict its class.</p>
+
+    <form id="predictionForm">
+        <!-- 13 Wine features; names are for humans, field names are feature1..feature13 -->
+        <label for="feature1">Alcohol:</label>
+        <input type="number" id="feature1" step="0.0001" required>
+
+        <label for="feature2">Malic acid:</label>
+        <input type="number" id="feature2" step="0.0001" required>
+
+        <label for="feature3">Ash:</label>
+        <input type="number" id="feature3" step="0.0001" required>
+
+        <label for="feature4">Alcalinity of ash:</label>
+        <input type="number" id="feature4" step="0.0001" required>
+
+        <label for="feature5">Magnesium:</label>
+        <input type="number" id="feature5" step="0.0001" required>
+
+        <label for="feature6">Total phenols:</label>
+        <input type="number" id="feature6" step="0.0001" required>
+
+        <label for="feature7">Flavanoids:</label>
+        <input type="number" id="feature7" step="0.0001" required>
+
+        <label for="feature8">Nonflavanoid phenols:</label>
+        <input type="number" id="feature8" step="0.0001" required>
+
+        <label for="feature9">Proanthocyanins:</label>
+        <input type="number" id="feature9" step="0.0001" required>
+
+        <label for="feature10">Color intensity:</label>
+        <input type="number" id="feature10" step="0.0001" required>
+
+        <label for="feature11">Hue:</label>
+        <input type="number" id="feature11" step="0.0001" required>
+
+        <label for="feature12">OD280/OD315 of diluted wines:</label>
+        <input type="number" id="feature12" step="0.0001" required>
+
+        <label for="feature13">Proline:</label>
+        <input type="number" id="feature13" step="0.0001" required>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    <div class="predicted-class" style="display:none;">
+        <h2 id="predictedClass">Predicted Class:</h2>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#predictionForm').on('submit', function(event) {
+                event.preventDefault(); // Prevent default form submission
+
+                var formData = {};
+                for (var i = 1; i <= 13; i++) {
+                    formData['feature' + i] = $('#feature' + i).val();
+                }
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/predict',
+                    data: formData,
+                    dataType: 'json',
+                    encode: true
+                }).done(function(data) {
+                    console.log(data);
+                    if (data.error) {
+                        alert('Error: ' + data.error);
+                        return;
+                    }
+                    $('#predictedClass').text("Predicted Class: " + data.predicted_class);
+                    $('.predicted-class').show();
+                }).fail(function(data) {
+                    alert('Error: Could not reach the prediction server.');
+                    console.log(data);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+services:
+  model_training:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: model_training
+    container_name: model_training
+    volumes:
+      - ./model_output:/model_output
+
+
+  serving:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: serving
+    container_name: model_serving
+    depends_on:
+      - model_training
+    volumes:
+      - ./model_output:/model_output     # <-- FIXED
+    ports:
+      - "4000:4000"                      # Flask runs on 4000 in main.py
+    environment:
+      NAME: "World"
+    command: ["python", "main.py"]
